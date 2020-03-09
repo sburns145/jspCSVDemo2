@@ -15,11 +15,15 @@
         <h1>Entry Form</h1>
         
         <form name="Name Input Form" action="response.jsp">
-            Enter Your Name: 
-            <input type="text" name="name" />
+            Enter Your First Name: 
+            <input type="text" name="firstName" />
             
             Enter a number:
             <input type="number" name="x" />
+            
+            Enter your Last Name:
+            <input type="text" name="lastName" />
+            
             <input type="submit" value="OK" />
         </form>
         

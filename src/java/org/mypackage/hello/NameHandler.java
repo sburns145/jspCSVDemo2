@@ -10,27 +10,50 @@ package org.mypackage.hello;
  * @author scott.burns
  */
 public class NameHandler {
-    private String name;
+    private String firstName;
+    private String lastName;
     private int x;
+    private String combine;
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+        //return "garbage";
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+   
+
+    public String getCombine() {
+        return combine;
+    }
+    
+    public String combine() {
+        return getLastName() + ", " + getFirstName();
+    }
     
     public NameHandler() {
-        name = null;
+        firstName = null;
+        lastName = null;
+        
+        x = 10;
+    }
+    
+    public NameHandler(String name) {
+        this.firstName = name;
         x = 10;
     }
 
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
+  
 
     /**
      * @return the x
@@ -44,5 +67,13 @@ public class NameHandler {
      */
     public void setX(int x) {
         this.x = x;
+    }
+    
+    public String combine(int in, String inString)  {
+        return inString + ":" +in;
+    }
+    
+    public String test() {
+        return "***";
     }
 }
